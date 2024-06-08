@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-weight: 400;
+}
+
+.day_card {
+    background-color:rgb(78, 165, 217, .5);
+    width: 190px;
+    height: 100px;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+.day_card_header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 10px;
+    padding-left: 5px;
+    gap: 5px;
+}
+
+
+.day_card img {
+    width: 25px;
+}
+
+.day_card_value {
+    margin-top: 15px;
+    margin-left: 10px;
+}

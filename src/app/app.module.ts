@@ -11,13 +11,14 @@ import { ForecastCardComponent } from './shared/forecast-card/forecast-card.comp
 import { ForecastDayComponent } from './shared/forecast-day/forecast-day.component';
 import { NgFor, NgIf } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
     ForecastPillComponent,
     ForecastCardComponent,
-    ForecastDayComponent
+    ForecastDayComponent,
   ],
   imports: [
     BrowserModule,
@@ -29,6 +30,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     NgIf,  
     ReactiveFormsModule,
     FormsModule,
+    HttpClientModule,
 
   ],
   providers: [],

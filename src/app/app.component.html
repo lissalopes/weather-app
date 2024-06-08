@@ -1,25 +1,43 @@
 <body>
   <div class="top_page">
     <div class="search_box">
-      <form class="city">
-        <input type="text" placeholder="Search City" />
-        <button class="search">
-          <img class="icon_search" src="../assets/icons/search_24dp_FILL0_wght300_GRAD0_opsz24.svg">
+      <form class="city" [formGroup]="searchForm">
+        <input type="text" placeholder="Search City" formControlName="cityName"/>
+        <button class="search" (click)="searchWeather()">
+          <img
+            class="icon_search"
+            src="../assets/icons/search_24dp_FILL0_wght300_GRAD0_opsz24.svg"
+          />
         </button>
       </form>
     </div>
 
     <div class="city_info">
       <h3 class="city_name">Test</h3>
-      <img class="temp_img" src="../assets/icons/icons8-sun.svg"/>
+      <img class="temp_img" src="../assets/icons/icons8-sun.svg" />
       <h1 class="temp">13C</h1>
       <h5 class="min_max">Min/Max</h5>
     </div>
   </div>
 
-  <app-forecast-day></app-forecast-day>
-  <app-forecast-card></app-forecast-card>
-  <app-forecast-pill></app-forecast-pill>
+  <div class="day">
+    <div class="title">Title</div>
+    <div class="component">
+      <app-forecast-day *ngFor="let day of days"></app-forecast-day>
+    </div>
+  </div>
+  <div class="hour">
+    <div class="title">Title</div>
+    <div class="component">
+      <app-forecast-pill *ngFor="let hour of hours"></app-forecast-pill>
+    </div>
+  </div>
+  <div class="detail">
+    <div class="title">Title</div>
+    <div class="component">
+      <app-forecast-card *ngFor="let detail of details"></app-forecast-card>
+    </div>
+  </div>
 </body>
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->

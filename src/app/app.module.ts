@@ -9,6 +9,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ForecastPillComponent } from './shared/forecast-pill/forecast-pill.component';
 import { ForecastCardComponent } from './shared/forecast-card/forecast-card.component';
 import { ForecastDayComponent } from './shared/forecast-day/forecast-day.component';
+import { NgFor, NgIf } from '@angular/common';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,11 @@ import { ForecastDayComponent } from './shared/forecast-day/forecast-day.compone
     AppRoutingModule,
     BrowserAnimationsModule,
     MatListModule,
-    MatCardModule,  
+    MatCardModule,
+    NgFor,
+    NgIf,  
+    ReactiveFormsModule,
+    FormsModule,
 
   ],
   providers: [],

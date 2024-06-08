@@ -1,5 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-weight: 400;
+}
+
 .hourly {
-    background-color: rgb(78, 165, 217, .5);
+    background-color: rgb(42, 68, 148, .5);
     border-radius: 10px;
-    
+    margin: 5px;
+}
+
+.hourly_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50px;
+    height: 140px;
+}
+.hourly_info h3 {
+    margin-top: 8px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.hourly_info img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 8px;
 }

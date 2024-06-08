@@ -3,16 +3,16 @@
 }
 
 .next_days {
-    background-color: rgb(78, 165, 217, .5);
-    width: 390px;
+    background-color: rgb(42, 68, 148, .5);
+    width: 380px;
     height: 40px;
-    margin-top: 15px;
     padding-left: 5px;
     padding-right: 5px;
     border-radius: 10px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 5px;
+    margin: 5px;
 }
 
 .next_days_day{
@@ -36,4 +36,8 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+}
+
+.mdc-list {
+    padding: 0;
 }
